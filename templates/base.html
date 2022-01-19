@@ -2,51 +2,164 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
+<head>
+  {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %}
+  {% block extra_meta %}
+  {% endblock %}
 
-    {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    {% endblock %}
+  {% block corecss %}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom CSS -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" >
+  {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+  {% block extra_css %}
+  
+  {% endblock %}
 
-    {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    {% endblock %}
+  {% block corejs %}
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6abe4f8110.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+  {% block extra_js %}
+  {% endblock %}
 
-    <title>Sneaker Game{% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top"></header>
+  <title>Wavy{% block extra_title %}{% endblock %}</title>
+</head>
 
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+<body>
+  <header class="container-fluid fixed-top">
+    <div id="navbar" class="row bg-white pt-lg-2 pb-lg-2 d-none d-lg-flex box-shadow-very-light">
+      <div class="col-12 col-lg-2 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <a href="" class="nav-link main-logo-link">
+          <h2 class="text-dark my-0 fs-5" >Sneaker Game</h2>
+        </a>
+      </div>
+      <!-- Products Dropdown -->
+      <div class="col-12 col-lg-2 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <a class="text-dark nav-link dropdown" href="#" id="product-options" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <div class="text-center">
+            <p class="my-0 dropdown-toggle">Products</p>
+          </div>
+        </a>
+        {% include 'includes/main-nav.html' %}
+      </div>
+      <!-- Search bar -->
+      <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
+        <form method="GET" action="">
+          <div class="input-group w-100">
+            <input class="form-control border product-search fs-6 fw-light" type="text" name="q" placeholder="Browse Products">
+            <button class="btn text-dark" type="submit" id="button-addon2">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <!-- Account Dropdown -->
+          <li class="list-inline-item dropdown">
+            <a class="text-dark nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user-circle fa-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Account"></i>
+                </div>
+              </div>
+            </a>
+            <div class="user-options dropdown-menu border-rounded" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item text-dark fw-light">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item text-dark fw-light">My Profile</a>
+                <a href="" class="dropdown-item text-dark fw-light">Logout</a>
+                {% else %}
+                <a href="" class="dropdown-item text-dark fw-light">Register</a>
+                <a href="" class="dropdown-item text-dark fw-light">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <!-- Shopping Basket -->
+          <li class="list-inline-item">
+            <a class="{% if grand_total %}text-tomato hover-text-success {% else %}text-dark{% endif %} nav-link" 
+              href="">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-basket fa-lg pr-3"></i>{% if grand_total %}
+                  €{{ grand_total|floatformat:2 }}
+                  {% else %}
+                  £0.00
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+    </div>
+    <div class="row bg-white d-lg-none justify-content-between ">
+      <nav class="nav-item navbar-expand-lg navbar-light h-60 sticky-top box-shadow-very-light">
+        <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        {% include 'includes/mobile-top-header.html' %}
+        {% include 'includes/main-nav.html' %}
+      </nav>
+    </div>
+  </header>
 
-    {% block page_header %}
-    {% endblock %}
+  {% if messages %}
+  <div class="message-container">
 
-    {% block content %}
-    {% endblock %}
+  </div>
+  {% endif %}
 
-    {% block postloadjs %}
-    {% endblock %}
+ 
+  {% block page_header %}
+  {% endblock %}
+  
+  {% block content %}
+  {% endblock %}
+ 
 
-    
-  </body>
+<!-- Footer -->
+<footer id="footer" class="">
+
+</footer>
+
+{% block postloadjs %}
+
+{% endblock %}
+
+
+
+</body>
 </html>

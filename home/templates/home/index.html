@@ -1,6 +1,46 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-    <h1 class="display-4 text-success">It works!</h1>
+{% block page_header %}
+    <div class="row">
+        <div class="col-12 hero-container" id="title">
+            <h1 class="logo-font text-dark text-center animate__animated animate__fadeInUp animate__delay-1s">
+                <i>Sneaker Game </i>
+            </h1>
+            <div class="heads">
+                <h4 class="text-center">
+                    <a href="" 
+                    class="shop-now-btn rounded-pill btn text-light btn-main bg-dark box-shadow text-uppercase">
+                        View Products
+                    </a>
+                </h4>
+            </div>
+        </div>
+    </div>
 {% endblock %}
+
+{% block content %}
+
+    <!-- New Arrivals -->
+    <div class="container-fluid">
+        <section>
+            <div class="row">
+                <div class="col-12 bg-white new-arrivals">
+                    <div class="container">
+                        <div class="d-flex">
+                            <h1 class="text-dark pt-5 flex-grow-1">New Arrivals.</h1>
+                        </div>
+                        <!-- Featured Products -->
+                        <div class="products-wrapper d-flex flex-wrap">
+                            <div class="cards justify-content-between text-center">
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+{% endblock %}
+

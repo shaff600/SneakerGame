@@ -1,0 +1,44 @@
+html {
+    height: 900vh;
+}
+footer {
+    height: 0;
+}
+
+body {
+    background: url('/media/j1.jpeg') no-repeat top center fixed;
+    background-size: cover;
+    /* height: calc(100vh - 164px); */
+    color: #000;
+    font-family: 'Prompt', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+section {
+    margin-top: 90px;
+}
+.heads{
+    margin-top: 75vh;
+}
+#title {
+    margin-top: 100px;
+}
+
+.hero-container{
+   height: auto;
+
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
