@@ -19,10 +19,10 @@ section {
     margin-top: 90px;
 }
 .heads{
-    margin-top: 75vh;
+    margin-top: 70vh;
 }
 #title {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .hero-container{
@@ -41,4 +41,16 @@ section {
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
