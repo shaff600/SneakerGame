@@ -76,6 +76,10 @@ section {
 .pg_heading {
     margin-top: 12.5rem;
 }
+.checkout_heading{
+    margin-top: 6.5rem;
+    text-align: center;
+}
 
 h2 {
     color: red; !important
