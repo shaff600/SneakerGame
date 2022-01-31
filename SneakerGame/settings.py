@@ -26,7 +26,7 @@ SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+SITE_ID = 1 
 
 # Application definition
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'crispy_forms',
+    'profiles'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
