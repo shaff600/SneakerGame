@@ -1,1 +1,1 @@
-web: gunicorn sneakergame.wsgi:application
+web: gunicorn SneakerGame.wsgi:application
