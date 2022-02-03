@@ -3,10 +3,6 @@ footer {
 }
 
 body {
-    background: url('/media/j1.jpeg') no-repeat top center fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     /* height: calc(100vh - 164px); */
     color: #000;
     font-family: 'Prompt', sans-serif;
@@ -19,7 +15,7 @@ body {
     background: #fff;
     /* bottom:0; */
     width:100%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-color: grey;
     border-radius: 8px;
     background: #e0e0e0;
@@ -28,14 +24,16 @@ body {
        /* Height of the footer */
     background-attachment:fixed;
     position: fixed;
+}
 
+.btn:hover {
+    color: #d1d1d1;
 }
 
 
 
 #title {
-    margin-top: 200px;
-   
+    /* margin-top: 200px; */
 }
 #landing_button {   
     position: relative;
@@ -155,6 +153,14 @@ a.category-badge > span.badge:hover {
 .btn-black {
     background: black;
     color: white;
+}
+
+.home-page{
+    background: url('/media/j1.jpeg') no-repeat top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 50vh;
 }
 
 .btn-outline-black {
@@ -314,8 +320,20 @@ a.category-badge > span.badge:hover {
     border-color: #dc3545;
 }
 
+.row.home-page .text-center {
+    padding: 20px;
+}
+
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .home-page{
+        min-height: 100vh;
+    }
+    
 }
