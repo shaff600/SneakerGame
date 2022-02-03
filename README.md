@@ -46,11 +46,14 @@ My initial thoughts when designing the surface of the website was to theme the q
 ### Front-end Framework -  [Bootstrap](https://getbootstrap.com/)
 -	The front-end framework of Bootstrap was used to build the styling components of the application. Materialize does alot of the heavy lifting for you and provides  default stylings that speed up the development process.
 
-### Custom Font -  [Google Fonts](https://fonts.google.com/specimen/Permanent+Marker)
--  
+### Custom Font -  [Google Fonts](https://fonts.google.com/specimen/Orbitron?query=Orbitron)
+-  The font class from google called "Orbitron", Designed by Matt McInerney was used for page headings.
 
 ### Glass Cards-  [Glassmorphism](https://hype4.academy/tools/glassmorphism-generator)
 -   This generator was used to create the background styling for the card components on the application. It was simple to use and provided CSS that's required for the desired effect.
+
+### Soft UI (Footer)-  [Glassmorphism](https://neumorphism.io/#e0e0e0)
+-   This CSS generator was used to create a simple footer with shadow effects
 
 ## Features
 -	Responsive UI/UX
@@ -106,12 +109,144 @@ My initial thoughts when designing the surface of the website was to theme the q
 
 -   Balsamiq was used to create the  [wireframes]()  during the design process.
 
-
-
-
-
-
 # Testing
+Testing was done throughout the project via chrome development tools. I also used various code validators to make sure my code was free of errors.
+    
+###	Testing User Stories from User Experience (UX) Section
+
+-	User (Customer)
+	-	As a user, I would like to locate different site pages through the navigation panel
+	-	As a user, I would like to view latest sneakers
+	-	As a user, I would like to filter sneakers by brand 
+	-	As a user, I would like to filter by price
+	-	As a user, I would like to filter by rating 
+	-	As a user, I would like to view product details
+	-	As a user, I would like to place items into shopping basket
+	-	As a user, I would like to purchase items in my shopping basket
+	-	As a user, I would like to confirm deletion of items from basket
+	-	As a user, I would like to place to increace/decrease quantitiy 
+	-	As a user, I would like to register an account
+	-	As a user, I would like to log into my account
+- Admin (Super User)
+	-	As a admin, I would like access to Product Management page
+	-	As a admin, I would like to ability to delete a user account
+	-	As a admin, I would like the ability to perofrm CRUD operation on Products, Brands and Categories 
+		-	CRUD - Create, Read, Update, Delete
+
+## Manual Testing
+
+ ### As a user, I would like to locate different site pages through the navigation panel 
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+All Products| Filtering options are diaplyed, filter by Price, Rating, Category and All Products| PASS
+Brands | Filtering options are diaplyed, filter by Nike, Jordan, Off-White, Bearbrick and All Brands | PASS
+Accessories| Filtering options are diaplyed, filter by Shoe Care, Collectables, Caps and Bags | PASS
+Categories| Filtering options are diaplyed, filter by Mens, Womens, Kids, All| PASS
+My Account| Product Management (Super User access), Register and Login options are visible | PASS
+Text|Checked if all fonts and colors used are consistent or not|PASS
+
+ ### As a user, I would like to register an account
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "Register" | on click page is redirected to Register page | PASS
+Form Validation| Submit form with partial entries | PASS
+Enter valid data| On form submission, verfication e-mail is produced| PASS
+
+ ### As a user, I would like to log into my account
+
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "Login" and enter invalid credentials| on click, error message is displayed | PASS
+Form Validation| Submit form with partial entries | PASS
+Enter valid data| On form submission, page is redirected to homepage| PASS
+
+###	As a user, I would like to view latest sneakers
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "All Products"| All Products are displayed | PASS
+ 
+###	As a user, I would like to filter sneakers by brand 
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "Brands" on navbar | options avaiable for different brands| PASS
+Enter specfic brand in search bar| Number of results listed  | PASS
+
+###	As a user, I would like to filter by price
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "All Products"| All Products are displayed | PASS
+Select Price(Low to High) | Filter is applied to products | PASS
+Select Price(High to Low) | Filter is applied to products | PASS
+
+###	As a user, I would like to filter by rating 
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "All Products"| All Products are displayed | PASS
+Select Rating (Low to High) | Filter is applied to products | PASS
+Select Rating (High to Low) | Filter is applied to products | PASS
+
+###	As a user, I would like to view product details
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "All Products"| All Products are displayed | PASS
+Select a Product| Page is redirected to Product Detail page| PASS
+
+###	As a user, I would like to place items into shopping basket
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Select a Product| Page is redirected to Product Detail page| PASS
+Click "Add To Bag" | Item is placed in basket | PASS
+
+###	As a user, I would like to purchase items in my shopping basket
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "Secure Checkout"| Page is redirected to checkout entry page | PASS
+Form Validation| Submit form with partial entries | PASS
+Enter valid data (Sample Stripe Data)| On form submission, page is redirected to order confirmation page| PASS
+
+###	As a user, I would like to confirm deletion of items from basket
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click "Delete" on basket item | button does not work | FAIL
+Update J Query Version| Item can now be removed| FAIL
+
+###	As a user, I would like to place to increace/decrease quantitiy 
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Click + on bag item| Quanitity for item is updated| PASS
+Click - on bag item| Quanitity for item is updated| PASS
+
+###	As a admin, I would like access to Product Management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Login with SuperUser credentials| "Product Management" page is displayed under "My Account"| PASS
+
+###	As a admin, I would like to ability to delete a user account
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Naviagte to the admin URL ("/admin/")| Admin login page is populated | PASS
+Locate user account and click "delete"| Confirmation message pop up generated, user deleted | PASS
+
+###	As a admin, I would like the ability to perform CRUD operation on Products, Brands and Categories 
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Navigate to "Product Management" on Nav Bar| On click, page is redirected| PASS
+Form Validation| Submit form with partial entries | PASS
+Enter valid data| On form submission, page is redirected to products page| PASS
+On admin screen, update product details| Product is updated | PASS
+On admin screen, delete product | Product is deleted | PASS
+On admin screen, add new brand item via form | Brand is added | PASS
+On admin screen, add new category item via form | Category is added | PASS
+On admin screen, update category item via form | Category is updated | PASS
+
+## Validators
+
+The code included for this project has been inputted into W3C HTML Validator, W3C Validator, JSHint Validator and a PEP8 Validator. Within the HTML Validators there where some fails regarding the django templating that's been used however there where no HTML errors. 
+# Summary
+   -   As a result of running the validator for the HTML, it was shown that the jinja templating language was causing issues however this is expected as the tool is not recognising the templating lanugage. When carrying out testing there was an issue with the product delete button when at basket view, a new JQuery URL was used which worked, I believe i was using the "slim" version of which dosen't include the full functionaility JQuery offers.
+   
 
 
 
