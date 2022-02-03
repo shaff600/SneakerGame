@@ -2,13 +2,8 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container">
     <div class="row">
-        <div class="col-12 hero-container min-vh-100" id="title">
-            <h1 class="logo-font text-dark text-center animate__animated animate__fadeInUp animate__delay-1s">
-                <h2 class="logo-font text-black text-center  my-0"><strong>Sneaker</strong> Game</h2>
-            </h1>
-            <div class="heads">
+        <div class="col-12 hero-container" id="title">
                 <h4 class="text-center">
                     <a href="{% url 'products' %}" 
                     class="shop-now-btn rounded-pill btn text-light btn-main bg-dark box-shadow text-uppercase">
@@ -18,13 +13,13 @@
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
 
 {% block content %}
 
     <!-- New Arrivals -->
     <!-- <div class="container-fluid">
+        <section>
             <div class="row ">
                 <div class="col-12 bg-white new-arrivals">
                     <div class="container ">
@@ -40,6 +35,7 @@
                     </div>
                 </div>
             </div>
+        </section>
     </div> -->
    
 {% endblock %}

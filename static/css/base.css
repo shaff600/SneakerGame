@@ -1,7 +1,3 @@
-html {
-   
-
-}
 footer {
     height: 0;
 }
@@ -30,35 +26,28 @@ body {
     box-shadow:  26px 26px 60px #a1a1a1,
              -26px -26px 60px #ffffff;
        /* Height of the footer */
-    
-
-
-}
-
-section {
-    margin-top: 90px;
-}
-.heads{
-    margin-top: 20rem;
-}
-#title {
-    margin-top: 200px;
-    color: #000;
-    letter-spacing: 0.2rem;
-    font-size: 3em;
+    background-attachment:fixed;
     position: fixed;
 
 }
 
-.hero-container{
+
+
+#title {
+    margin-top: 200px;
+   
+}
+#landing_button {   
+    position: relative;
+    margin-bottom: 10rem;
+
+ 
+}
+
+/* .hero-container{
    height: auto;
 
-}
-#tst{
-    color: red;
-    margin-top: 200px;
-}
-
+} */
 /* from Bulma */
 .icon {
     align-items: center;
@@ -100,7 +89,7 @@ section {
 h2 {
     font-size: 2.4rem;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: -3.5rem;
+    margin-bottom: 6.5rem;
 }
 strong {
     font-weight: 9rem;
@@ -114,7 +103,12 @@ strong {
     font-family: 'Bangers', cursive;
     color: #000;
     display: inline-block;
-    
+}
+
+.shop_heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    z-index: -1;
 }
 
 .checkout_heading{
@@ -140,7 +134,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #6d6f72 !important;
     color: #fff !important;
 }
 
@@ -172,7 +166,7 @@ a.category-badge > span.badge:hover {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #6d6f72;
     color: white !important;
 }
 
@@ -290,7 +284,7 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
+    background-color: red;
     border-color: #222;
 }
 
