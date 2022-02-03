@@ -7,12 +7,14 @@ footer {
 
 body {
     background: url('/media/j1.jpeg') no-repeat top center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     /* height: calc(100vh - 164px); */
     color: #000;
     font-family: 'Prompt', sans-serif;
     overflow-x: hidden;
-    height: 100vh;
+    height: auto;
 }
 
 section {
@@ -23,6 +25,11 @@ section {
 }
 #title {
     margin-top: 200px;
+    color: #000;
+    letter-spacing: 0.2rem;
+    font-size: 3em;
+    position: fixed;
+
 }
 
 .hero-container{
@@ -73,20 +80,30 @@ section {
     margin-top: 15px;
 }
 h2 {
-    margin-top: 15vh;
+    font-size: 2.4rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: -3.5rem;
+}
+strong {
+    font-weight: 9rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.4rem;
 }
 /* products title */
 .pg_heading {
     margin-top: 12.5rem;
+    font-family: 'Bangers', cursive;
+    color: #000;
+    display: inline-block;
+    
 }
+
 .checkout_heading{
     margin-top: 6.5rem;
     text-align: center;
 }
 
-h2 {
-    color: red; !important
-}
 hr {
     margin-top: 5rem;
 }

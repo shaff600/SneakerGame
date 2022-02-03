@@ -18,6 +18,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    brands = None
 
     if request.GET:
         if 'sort' in request.GET:
