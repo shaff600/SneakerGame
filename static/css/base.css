@@ -1,5 +1,6 @@
 html {
-    height: 100vh;
+   
+
 }
 footer {
     height: 0;
@@ -14,14 +15,31 @@ body {
     color: #000;
     font-family: 'Prompt', sans-serif;
     overflow-x: hidden;
-    height: auto;
+    /* height: auto; */
+}
+
+#footer {
+    overflow-x: hidden;
+    background: #fff;
+    /* bottom:0; */
+    width:100%;
+    margin-top: 100px;
+    background-color: grey;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow:  26px 26px 60px #a1a1a1,
+             -26px -26px 60px #ffffff;
+       /* Height of the footer */
+    
+
+
 }
 
 section {
     margin-top: 90px;
 }
 .heads{
-    margin-top: 70vh;
+    margin-top: 20rem;
 }
 #title {
     margin-top: 200px;
