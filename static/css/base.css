@@ -1,5 +1,5 @@
 footer {
-    height: 0;
+    height: 10px;
 }
 
 body {
@@ -30,7 +30,9 @@ body {
     color: #d1d1d1;
 }
 
-
+.mb-2, .my-2 {
+    margin-bottom: 8.5rem!important;
+}
 
 #title {
     /* margin-top: 200px; */
@@ -386,9 +388,9 @@ img.img-fluid.rounded {
     .home-page{
         min-height: 60vh;
     }
-    .input-group{
-        zoom: .6;
-    }    
+    /* .input-group{
+        zoom: ;
+    }     */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1399px){
@@ -398,6 +400,6 @@ img.img-fluid.rounded {
 }
 @media screen and (min-width: 1400px) {
     .home-page{
-        min-height: 140vh;
+        min-height: 95vh;
     }
 }

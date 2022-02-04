@@ -8,7 +8,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?products=Mens,Kids" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?products=Mens,Kids,Womens" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -19,9 +19,9 @@
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?brand=Nike" class="dropdown-item text-dark fw-light">Nike</a>
                 <a href="{% url 'products' %}?brand=Jordan" class="dropdown-item text-dark fw-light">Jordan</a>
-                <a href="{% url 'products' %}?brand=fila" class="dropdown-item text-dark fw-light">Off-White</a>
+                <a href="{% url 'products' %}?brand=Off-White" class="dropdown-item text-dark fw-light">Off-White</a>
                 <a href="{% url 'products' %}?brand=Bearbrick" class="dropdown-item text-dark fw-light">Bearbrick</a>
-                <a href="{% url 'products' %}?brand=new_balance" class="dropdown-item text-dark fw-light">All Brands</a>
+                <a href="{% url 'products' %}?brand=Nike,Jordan,Off-White,Bearbrick" class="dropdown-item text-dark fw-light">All Brands</a>
             </div>
         </li>
 
@@ -33,7 +33,7 @@
                 <a href="{% url 'products' %}?category=Accessories, Sneaky Trees" class="dropdown-item">Shoe Care</a>
                 <a href="{% url 'products' %}?category=Collectables" class="dropdown-item">Collectables</a>
                 <a href="{% url 'products' %}?category=Caps" class="dropdown-item">Caps</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=Bags" class="dropdown-item">Bags</a>
             </div>
         </li>
 
