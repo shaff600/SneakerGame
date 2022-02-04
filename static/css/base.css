@@ -83,6 +83,7 @@ body {
 
 .product-container {
     margin-top: 15px;
+    margin-bottom: 45px;
 }
 h2 {
     font-size: 2.4rem;
@@ -97,7 +98,7 @@ strong {
 }
 /* products title */
 .pg_heading {
-    margin-top: 12.5rem;
+    margin-top: 1rem;
     font-family: 'Bangers', cursive;
     color: #000;
     display: inline-block;
@@ -110,7 +111,7 @@ strong {
 }
 
 .checkout_heading{
-    margin-top: 6.5rem;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
@@ -128,7 +129,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .prod_details {
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 a.category-badge > span.badge:hover {
@@ -156,11 +157,11 @@ a.category-badge > span.badge:hover {
 }
 
 .home-page{
-    background: url('/media/j1.jpg') no-repeat top center;
+    background: url('/media/j1.jpeg') no-repeat top center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
-    /* height: 60vh; */
+    height: 60vh;
 }
 
 .btn-outline-black {
@@ -342,25 +343,61 @@ ul.navbar-nav.w-auto.mx-auto {
     text-align: left;
 }
 
+a#all-products-link {
+    width: max-content;
+}
+
+main.flex-fill {
+    overflow-x: clip;
+}
+
 form#signup_form {padding-bottom: 40px;}
+
+img.img-fluid.rounded {
+    min-width: 30px;
+}
+
+
 
 @media screen and (max-width: 480px) {
     .home-page{
         min-height: 40vh;
     }
+    .input-group{
+        zoom: .7;
+    }   
+
+    .table-responsive.rounded {
+        zoom: 0.9;
+    }
+    a.btn.btn-outline-black.rounded-0.btn-lg {
+        margin-bottom: 8px;
+    }
+
+    a#remove_8 {
+        float: left !important;
+    }
     
 }
+
+
 
 @media screen and (min-width: 480px) and (max-width: 992px) {
     .home-page{
         min-height: 60vh;
     }
-    
+    .input-group{
+        zoom: .6;
+    }    
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1399px){
     .home-page{
         min-height: 100vh;
     }
-    
+}
+@media screen and (min-width: 1400px) {
+    .home-page{
+        min-height: 140vh;
+    }
 }
