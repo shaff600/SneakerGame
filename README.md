@@ -2,6 +2,10 @@
   <h1 align="center">Django E-Commerce Project - Sneaker Game </h1>
 <img width="903" alt="devices" src="docs/readme/yunginresponsive.png"> 
   <h1 align="center">SneakerGame</h1>
+Live Link: https://sneakergame.herokuapp.com/
+  
+  -	Username: sampleuser 
+  -	Pass: sneakergame
 
 # Purpose:
 "SneakerGame" is a wavy fashion e-commerce website that allows shoppers to browse, search for and purchase the most popular sneakers and accessories.
@@ -39,7 +43,9 @@ The application has a set of categories and brands that are restricted by the ad
 To enable consistency throughout the application, the Python template engine of "Jinja" was used to help structure the HMTL pages. Jinja is a modern-day templating language for Python developers. Jinja templates include inheritance which is used to prevent repeated code. This saves a lot of time and reduces work. A base template contains the basic layout which is common to all the other templates. This is beneficial as it provides a level of consistency throughout the application structure.
 
 ## Skeleton:
-Before the development of the project, I sketched out my initial idea in Balsamiq Wireframes to provide a visual representation of what the application will look like. This has helped when creating the application as it allowed for a guide to follow during development. 
+Before the development of the project, I sketched out my initial idea in Balsamiq Wireframes to provide a visual representation of what the application will look like. This has helped when creating the application as it allowed for a guide to follow during development. I've also created a database design diagram that can be found below
+
+<img width="903" alt="devices" src="docs/readme/DB_design.png"> 
 
 ## Surface:
 My initial thought when designing the surface of the website was to theme the quiz to match an arcade type game. This meant including live backgrounds, funky fonts and a qwerky colour scheme. Here is how I went about achieving this:
