@@ -258,6 +258,7 @@ The code included for this project has been inputted into W3C HTML Validator, W3
   -	Currently, there isn't any functionality in place for a user to manage their orders. A user can view orders but cannot make amendments
   -	"Latest Stock" has not been implemented. Ideally wanted a section on the side that displays the latest items.
   -	"Featured Product" has not been implemented. This could have been used under the product detail page where the site suggests items based on the selected product. 
+  -	When implmenting email functionality, gmail settings where not matching up which has caused an error with heroku also. This will have to be fixed within phase 2 as there are outstanding issues that need to be fixed.
   -	
   ###	Future Development 
   - I would like to implement Latest Stock and Featured Product to make the e-commerce website complete. 
