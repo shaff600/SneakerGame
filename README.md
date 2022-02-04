@@ -1,5 +1,6 @@
 
-
+  <h1 align="center">Django E-Commerce Project - Sneaker Game </h1>
+<img width="903" alt="devices" src="docs/readme/yunginresponsive.png"> 
   <h1 align="center">SneakerGame</h1>
 
 # Purpose:
@@ -108,7 +109,7 @@ My initial thought when designing the surface of the website was to theme the qu
 
 7.  [Balsamiq:](https://balsamiq.com/)
 
--   Balsamiq was used to create the  [wireframes]()  during the design process.
+-   Balsamiq was used to create the  [wireframes](https://github.com/shaff600/SneakerGame/tree/main/docs/wireframes)  during the design process.
 
 # Testing
 Testing was done throughout the project via chrome development tools. I also used various code validators to make sure my code was free of errors.
