@@ -87,7 +87,7 @@ body {
 h2 {
     font-size: 2.4rem;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 6.5rem;
+    /* margin-bottom: 6.5rem; */
 }
 strong {
     font-weight: 9rem;
@@ -156,11 +156,11 @@ a.category-badge > span.badge:hover {
 }
 
 .home-page{
-    background: url('/media/j1.jpeg') no-repeat top center;
+    background: url('/media/j1.jpg') no-repeat top center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
-    height: 50vh;
+    /* height: 60vh; */
 }
 
 .btn-outline-black {
@@ -329,6 +329,33 @@ a.category-badge > span.badge:hover {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+nav.navbar ul {
+    padding: 0px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+ul.navbar-nav.w-auto.mx-auto {
+    text-align: left;
+}
+
+form#signup_form {padding-bottom: 40px;}
+
+@media screen and (max-width: 480px) {
+    .home-page{
+        min-height: 40vh;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 992px) {
+    .home-page{
+        min-height: 60vh;
+    }
+    
 }
 
 @media screen and (min-width: 992px) {
